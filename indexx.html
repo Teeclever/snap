@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    
+ 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous" />
+  </head>
+ 
+
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 px-lg-5 pt-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/images/logo.svg" alt=""></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon"  > </span>
+        </button>
+        
+          <ul class="navbar-nav me-auto mb-2 mb-lg-2 ms-5  d-none d-lg-flex gap-3 ">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Features
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light pb-3" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#"><img src="/images/icon-todo.svg" alt="" class="px-2"> Todo List</a></li>
+                <li><a class="dropdown-item" href="#"><img src="/images/icon-calendar.svg" alt="" class="px-2"> Calender</a></li>
+                <li><a class="dropdown-item" href="#"><img src="/images/icon-reminders.svg" alt="" class="px-2"> Reminders</a></li>
+                <li><a class="dropdown-item" href="#"><img src="/images/icon-planning.svg" alt="" class="px-2"> Planning</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light pb-3  "  aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#"> History</a></li>
+                <li><a class="dropdown-item" href="#"> Our Team</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+               
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark ">About</a>
+            </li>
+          </ul>
+          <form class="d-none d-lg-flex gap-4">
+           <a href="#" class="btn btn-light pb-2"> Login</a>
+           <a href="#" class="btn btn-outline-dark rounde border-2" style="border-radius: 11px;">Register</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+<!-- off canvas for moblie -->
+
+    <div class="offcanvas offcanvas-end" style="width: 300px;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+     
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+   
+        <div class="offcanvas-body">
+         
+          <nav class="navbar d-block navbar-light bg-white">
+
+            <ul class="navbar-nav  mb-0 mb-lg-2 ms-4  gap-3 ">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light pb-3 border-0" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#"><img src="/images/icon-todo.svg" alt="" class="px-2"> Todo List</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="/images/icon-calendar.svg" alt="" class="px-2"> Calender</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="/images/icon-reminders.svg" alt="" class="px-2"> Reminders</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="/images/icon-planning.svg" alt="" class="px-2"> Planning</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light pb-3 border-0  "  aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#"> History</a></li>
+                  <li><a class="dropdown-item" href="#"> Our Team</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark ">About</a>
+              </li>
+            </ul>
+
+            <form class=" gap-5 ps-5 text-center">
+             <a href="#" class="btn btn-white pb-2"> Login</a> <br>
+             <a href="#" class="btn btn-outline-dark rounde border-2 mt-3" style="border-radius: 11px; width: 200px;">Register</a>
+            </form>
+
+
+          </nav>
+        </div>
+
+       
+       
+  
+    </div>
+
+<!-- first section................ -->
+
+<section>
+      <div class="container-lg mt-5 px-3">
+
+
+      <div class="row flex-row-reverse justify-content-end  align-items-center gap-5">
+        
+        <div class="col-lg-5">
+          <img src="/images/image-hero-desktop.png" class="img-responsive d-none d-lg-block" style="height: 600px; width: 42vw;" alt="">
+          <img src="/images/image-hero-mobile.png" class="d-lg-none img-fluid text-center" alt="">
+
+
+       </div>
+
+       <div class="col-lg-5 ">
+        <h1 class="h1 fw-bold d-none d-lg-block" style="font-size: 70px;">
+          Make  <br> remote work
+        </h1>
+        <h1 class="h1 fw-bold d-lg-none text-center" style="font-size: 35px;">
+          Make remote work
+        </h1>
+
+        <div class="lead fw-bold text-muted t mt-5 d-none d-lg-block" style="width: 75%;">
+          Get your team in sync, no matter your location. Streamline processes, 
+create team rituals, and watch productivity soar.
+        </div>
+        <div class="lead fw-bold text-muted text-center mt-3 d-lg-none" >
+          Get your team in sync, no matter your location. Streamline processes, 
+create team rituals, and watch productivity soar.
+        </div>
+
+        <button class="btn btn-dark btn-lg mt-5 d-none d-lg-block" style="border-radius: 7px;">
+          Learn more
+    </button>
+        <div class=" d-lg-none text-center mt-4">
+        <button class="btn btn-dark btn-lg mt-" style="border-radius: 7px;">
+              Learn more
+        </button>
+        </div>
+        <br> <br>
+    <div class="d-flex gap-3 mt-0 mb-5 text-center">
+        <img src="/images/client-databiz.svg" alt="">
+        <img src="/images/client-audiophile.svg" alt="">
+        <img src="/images/client-meet.svg" alt="">
+        <img src="/images/client-maker.svg" alt="">
+    </div>
+    </div>
+
+
+      </div>
+      </div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
